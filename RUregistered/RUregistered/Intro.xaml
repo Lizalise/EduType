@@ -11,12 +11,12 @@
             <Canvas.Background>
                 <ImageBrush ImageSource="stainless-wallpaper-2048x1152.jpg"/>
             </Canvas.Background>
-            <Canvas Height="169" Canvas.Left="170" Canvas.Top="240" Width="508">
+            <Canvas Height="169" Canvas.Left="214" Canvas.Top="236" Width="508">
                 <Canvas.Background>
                     <ImageBrush ImageSource="Cool-Text-255541333380979.png"/>
                 </Canvas.Background>
             </Canvas>
-            <Button x:Name="intro" Content="" Canvas.Top="441" Width="405" RenderTransformOrigin="0.5,0.5" Height="110" Foreground="#FF190D0D" BorderBrush="#FFF3F3F3" Canvas.Left="249" Click="intro_Click" FontSize="18" FontWeight="Bold" MouseMove="intro_MouseMove" MouseLeave="intro_MouseLeave">
+            <Button x:Name="intro" Content="" Canvas.Top="429" Width="405" RenderTransformOrigin="0.5,0.5" Height="110" Foreground="#FF190D0D" BorderBrush="#FFF3F3F3" Canvas.Left="303" Click="intro_Click" FontSize="18" FontWeight="Bold" MouseMove="intro_MouseMove" MouseLeave="intro_MouseLeave">
                 <Button.Background>
                     <ImageBrush ImageSource="11.png"/>
                 </Button.Background>
@@ -29,7 +29,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button x:Name="aboutus" Content="" Canvas.Top="8" Width="211" RenderTransformOrigin="0.5,0.5" Height="202" Foreground="#FF190D0D" BorderBrush="#FFF3F3F3" Canvas.Left="743" Click="aboutus_Click" FontSize="18" FontWeight="Bold" MouseMove="aboutus_MouseMove" MouseLeave="aboutus_MouseLeave">
+            <Button x:Name="aboutus" Content="" Canvas.Top="7" Width="103" RenderTransformOrigin="0.5,0.5" Height="128" Foreground="#FF190D0D" BorderBrush="#FFF3F3F3" Canvas.Left="851" Click="aboutus_Click" FontSize="18" FontWeight="Bold" MouseMove="aboutus_MouseMove" MouseLeave="aboutus_MouseLeave">
                 <Button.Background>
                     <ImageBrush ImageSource="about-us.png"/>
                 </Button.Background>
