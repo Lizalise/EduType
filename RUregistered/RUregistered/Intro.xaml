@@ -1,0 +1,35 @@
+﻿<Window x:Class="RUregistered.Intro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RUregistered"
+        mc:Ignorable="d"
+        Title="Intro" Height="599.86" Width="967.494" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="593" VerticalAlignment="Top" Width="961" Margin="0,0,0,-22">
+            <Canvas.Background>
+                <ImageBrush ImageSource="stainless-wallpaper-2048x1152.jpg"/>
+            </Canvas.Background>
+            <Canvas Height="169" Canvas.Left="170" Canvas.Top="240" Width="508">
+                <Canvas.Background>
+                    <ImageBrush ImageSource="Cool-Text-255541333380979.png"/>
+                </Canvas.Background>
+            </Canvas>
+            <Button x:Name="intro" Content="" Canvas.Top="427" Width="389" RenderTransformOrigin="0.5,0.5" Height="124" Foreground="#FF190D0D" BorderBrush="#FFF3F3F3" Canvas.Left="249" Click="intro_Click" FontSize="18" FontWeight="Bold" MouseMove="intro_MouseMove" MouseLeave="intro_MouseLeave">
+                <Button.Background>
+                    <ImageBrush ImageSource="11.png"/>
+                </Button.Background>
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.62"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </Canvas>
+
+    </Grid>
+</Window>

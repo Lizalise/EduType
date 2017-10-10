@@ -1,0 +1,168 @@
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\bin\Debug\RUregistered.exe.config
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\bin\Debug\RUregistered.exe
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\bin\Debug\RUregistered.pdb
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\MainWindow.g.cs
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\App.g.cs
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.cache
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.lref
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\MainWindow.baml
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\RUregistered.g.resources
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\RUregistered.Properties.Resources.resources
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\RUregistered.csproj.GenerateResource.Cache
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\RUregistered.exe
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\RUregistered.pdb
+c:\users\mbube\documents\visual studio 2015\Projects\RUregistered\RUregistered\obj\Debug\RUregistered.csprojResolveAssemblyReference.cache
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\bin\Debug\RUregistered.exe.config
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\RUregistered.exe
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\RUregistered.pdb
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\bin\Debug\RUregistered.exe
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\bin\Debug\RUregistered.pdb
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\RUregistered.csprojResolveAssemblyReference.cache
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\App.g.cs
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.cache
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.lref
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\RUregistered.g.resources
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\RUregistered.Properties.Resources.resources
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\RUregistered.csproj.GenerateResource.Cache
+F:\RUregistered\RUregistered\bin\Debug\RUregistered.exe.config
+F:\RUregistered\RUregistered\obj\Debug\RUregistered.exe
+F:\RUregistered\RUregistered\obj\Debug\RUregistered.pdb
+F:\RUregistered\RUregistered\bin\Debug\RUregistered.exe
+F:\RUregistered\RUregistered\bin\Debug\RUregistered.pdb
+F:\RUregistered\RUregistered\obj\Debug\RUregistered.csprojResolveAssemblyReference.cache
+F:\RUregistered\RUregistered\obj\Debug\MainWindow.g.cs
+F:\RUregistered\RUregistered\obj\Debug\App.g.cs
+F:\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.cache
+F:\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.lref
+F:\RUregistered\RUregistered\obj\Debug\MainWindow.baml
+F:\RUregistered\RUregistered\obj\Debug\RUregistered.g.resources
+F:\RUregistered\RUregistered\obj\Debug\RUregistered.Properties.Resources.resources
+F:\RUregistered\RUregistered\obj\Debug\RUregistered.csproj.GenerateResource.Cache
+E:\RUregistered\RUregistered\bin\Debug\RUregistered.exe.config
+E:\RUregistered\RUregistered\obj\Debug\RUregistered.exe
+E:\RUregistered\RUregistered\obj\Debug\RUregistered.pdb
+E:\RUregistered\RUregistered\bin\Debug\RUregistered.exe
+E:\RUregistered\RUregistered\bin\Debug\RUregistered.pdb
+E:\RUregistered\RUregistered\obj\Debug\RUregistered.csprojResolveAssemblyReference.cache
+E:\RUregistered\RUregistered\obj\Debug\MainWindow.g.cs
+E:\RUregistered\RUregistered\obj\Debug\App.g.cs
+E:\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.cache
+E:\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.lref
+E:\RUregistered\RUregistered\obj\Debug\MainWindow.baml
+E:\RUregistered\RUregistered\obj\Debug\RUregistered.g.resources
+E:\RUregistered\RUregistered\obj\Debug\RUregistered.Properties.Resources.resources
+E:\RUregistered\RUregistered\obj\Debug\RUregistered.csproj.GenerateResource.Cache
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\bin\Debug\RUregistered.exe.config
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.exe
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.pdb
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\bin\Debug\RUregistered.exe
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\bin\Debug\RUregistered.pdb
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.csprojResolveAssemblyReference.cache
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\MainWindow.g.cs
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\App.g.cs
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.cache
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.lref
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\MainWindow.baml
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.g.resources
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.Properties.Resources.resources
+C:\Users\Mbube\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.csproj.GenerateResource.Cache
+G:\RUregistered\RUregistered\bin\Debug\RUregistered.exe.config
+G:\RUregistered\RUregistered\obj\Debug\RUregistered.exe
+G:\RUregistered\RUregistered\obj\Debug\RUregistered.pdb
+G:\RUregistered\RUregistered\obj\Debug\RUregistered.csprojResolveAssemblyReference.cache
+G:\RUregistered\RUregistered\obj\Debug\MainWindow.g.cs
+G:\RUregistered\RUregistered\obj\Debug\App.g.cs
+G:\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.cache
+G:\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.lref
+G:\RUregistered\RUregistered\bin\Debug\RUregistered.exe
+G:\RUregistered\RUregistered\bin\Debug\RUregistered.pdb
+G:\RUregistered\RUregistered\obj\Debug\MainWindow.baml
+G:\RUregistered\RUregistered\obj\Debug\RUregistered.g.resources
+G:\RUregistered\RUregistered\obj\Debug\RUregistered.Properties.Resources.resources
+G:\RUregistered\RUregistered\obj\Debug\RUregistered.csproj.GenerateResource.Cache
+D:\Desktop\RUregistered\RUregistered\bin\Debug\RUregistered.exe.config
+D:\Desktop\RUregistered\RUregistered\bin\Debug\RUregistered.exe
+D:\Desktop\RUregistered\RUregistered\bin\Debug\RUregistered.pdb
+D:\Desktop\RUregistered\RUregistered\obj\Debug\MainWindow.g.cs
+D:\Desktop\RUregistered\RUregistered\obj\Debug\App.g.cs
+D:\Desktop\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.cache
+D:\Desktop\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.lref
+D:\Desktop\RUregistered\RUregistered\obj\Debug\MainWindow.baml
+D:\Desktop\RUregistered\RUregistered\obj\Debug\RUregistered.g.resources
+D:\Desktop\RUregistered\RUregistered\obj\Debug\RUregistered.Properties.Resources.resources
+D:\Desktop\RUregistered\RUregistered\obj\Debug\RUregistered.csproj.GenerateResource.Cache
+D:\Desktop\RUregistered\RUregistered\obj\Debug\RUregistered.exe
+D:\Desktop\RUregistered\RUregistered\obj\Debug\RUregistered.pdb
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\AdministratorUse.g.cs
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\AdministratorUse.baml
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\Intro.g.cs
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\Intro.baml
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\MainWindow.g.cs
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\MainWindow.baml
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\RUregistered.typing.resources
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\Revision.g.cs
+\\ict.ru.ac.za\DFS\UGHomes\g16m3797\My Documents\RUregistered\RUregistered\obj\Debug\Revision.baml
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\bin\Debug\RUregistered.exe.config
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.exe
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.pdb
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\bin\Debug\RUregistered.exe
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\bin\Debug\RUregistered.pdb
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\AdministratorUse.g.cs
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\Intro.g.cs
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\MainWindow.g.cs
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\Revision.g.cs
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\App.g.cs
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.cache
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered_MarkupCompile.lref
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\AdministratorUse.baml
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\Intro.baml
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\MainWindow.baml
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\Revision.baml
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.g.resources
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.Properties.Resources.resources
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.typing.resources
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\RUregistered.csproj.GenerateResource.Cache
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\LogIn.g.cs
+C:\Users\g16m3797\Downloads\RUregistered\RUregistered\obj\Debug\LogIn.baml
+E:\RUregistered\RUregistered\obj\Debug\AdministratorUse.g.cs
+E:\RUregistered\RUregistered\obj\Debug\Intro.g.cs
+E:\RUregistered\RUregistered\obj\Debug\LogIn.g.cs
+E:\RUregistered\RUregistered\obj\Debug\AdministratorUse.baml
+E:\RUregistered\RUregistered\obj\Debug\Intro.baml
+E:\RUregistered\RUregistered\obj\Debug\LogIn.baml
+E:\RUregistered\RUregistered\obj\Debug\RUregistered.typing.resources
+G:\RUregistered\RUregistered\obj\Debug\AdministratorUse.g.cs
+G:\RUregistered\RUregistered\obj\Debug\Intro.g.cs
+G:\RUregistered\RUregistered\obj\Debug\LogIn.g.cs
+G:\RUregistered\RUregistered\obj\Debug\Revision.g.cs
+G:\RUregistered\RUregistered\obj\Debug\AdministratorUse.baml
+G:\RUregistered\RUregistered\obj\Debug\Intro.baml
+G:\RUregistered\RUregistered\obj\Debug\LogIn.baml
+G:\RUregistered\RUregistered\obj\Debug\Revision.baml
+G:\RUregistered\RUregistered\obj\Debug\RUregistered.typing.resources
+E:\RUregistered\RUregistered\obj\Debug\MyNotePad.g.cs
+E:\RUregistered\RUregistered\obj\Debug\MyNotePad.baml
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\bin\Debug\RUregistered.exe.config
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\bin\Debug\RUregistered.exe
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\bin\Debug\RUregistered.pdb
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\RUregistered.csprojResolveAssemblyReference.cache
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\AdministratorUse.g.cs
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\Intro.g.cs
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\LogIn.g.cs
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\MainWindow.g.cs
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\MyNotePad.g.cs
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\App.g.cs
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\RUregistered_MarkupCompile.cache
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\RUregistered_MarkupCompile.lref
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\AdministratorUse.baml
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\Intro.baml
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\LogIn.baml
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\MainWindow.baml
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\MyNotePad.baml
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\RUregistered.g.resources
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\RUregistered.Properties.Resources.resources
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\RUregistered.typing.resources
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\RUregistered.csproj.GenerateResource.Cache
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\RUregistered.csproj.CoreCompileInputs.cache
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\RUregistered.exe
+C:\Users\sbuda\Documents\MEGA\RUregisteredV2\RUregistered\obj\Debug\RUregistered.pdb
