@@ -39,7 +39,7 @@
                     </Grid>
                 </TabItem>
                 <TextBox x:Name="textBox6" Height="23" TextWrapping="Wrap" Text="TextBox" Width="120"/>
-                <TabItem Header="Revision" HorizontalAlignment="Left" Height="20" VerticalAlignment="Bottom" Width="63" Margin="6,0,-6,0" Loaded="load" MouseDoubleClick="TabItem_MouseDoubleClick">
+                <TabItem Header="Revision" HorizontalAlignment="Left" Height="20" VerticalAlignment="Bottom" Width="63" Margin="6,0,-6,0" MouseDoubleClick="TabItem_MouseDoubleClick">
                     <Grid Background="#FFE5E5E5">
                         <TextBox x:Name="Revisiontxt" HorizontalAlignment="Left" Height="279" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="688"/>
                         <Button x:Name="nextbtn" Content="Next" HorizontalAlignment="Left" Margin="703,10,0,0" VerticalAlignment="Top" Width="76" Click="nextbtn_Click"/>

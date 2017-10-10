@@ -399,19 +399,6 @@ namespace RUregistered
 
         }
 
-        private void load(object sender, RoutedEventArgs e)
-        {
-            if (File.Exists(Current.Name))
-            {
-                StreamReader y = File.OpenText(Current.Name);
-                Revisiontxt.Text = ReadString(y);
-            }
-            else
-            {
-                Next();
-            }
-        }
-
         private void nextbtn_Click(object sender, RoutedEventArgs e)
         {
             Next();
