@@ -91,7 +91,7 @@ namespace RUregistered
                     textBox4.BorderBrush = Brushes.Gray;
                     comboBox.BorderBrush = Brushes.Gray;
                 }
-                if(b != 8) { MessageBox.Show("Student Number must be a length of 8. \n it should start with a g/G "); textBox2.BorderBrush = Brushes.Red; }
+                if(b != 8) { textBox2.BorderBrush = Brushes.Red; MessageBox.Show("Student Number must be a length of 8. \n it should start with a g/G "); textBox2.BorderBrush = Brushes.Gray; }
                 
             }
             catch (OleDbException)
@@ -190,46 +190,70 @@ namespace RUregistered
             //Update data to database 
             try
             {
+                //openning the database connection
+                connection.Open();
 
-                if (textBox.Text != "" && textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && comboBox.Text != "" && textBox4.Text != "")
+                string Query = @"SELECT[Student Number]
+                        FROM RUTable
+                                    WHERE([Student Number] = '" + textBox2.Text + "')";
+                OleDbCommand Command = new OleDbCommand(Query, connection);
+                Command.ExecuteNonQuery();
+
+                OleDbDataReader ODR = Command.ExecuteReader();
+                int i = 0;
+                while (ODR.Read())      //@https://www.youtube.com/watch?v=6WWaFRBxNBU
                 {
+                    i++;
+
+                }
+                if (i == 1)
+                {
+                    if (textBox.Text != "" && textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && comboBox.Text != "" && textBox4.Text != "")
+                    {
 
 
-                    //openning the database connection
-                    connection.Open();
 
-                    //A Query made in the database
-                    OleDbCommand command = new OleDbCommand(@"UPDATE       RUTable
+                        //A Query made in the database
+                        OleDbCommand command = new OleDbCommand(@"UPDATE       RUTable
  SET                [First Name] ='" + textBox.Text + "', [Last Name] ='" + textBox1.Text + "', [Student Number] ='" + textBox2.Text + "', Email ='" + textBox3.Text + "', Course ='" + comboBox.Text + "', [Password] ='" + textBox4.Text + "' WHERE        (RUTable.[Student Number] = '" + textBox2.Text + "')", connection);
 
-                    command.ExecuteNonQuery();
+                        command.ExecuteNonQuery();
 
-                    //clossing the connection
-                    connection.Close();
+                        //clossing the connection
+                        connection.Close();
 
-                    MessageBox.Show("Updated Successfully...! \n Click new to update another record ");
-                    Display();
-                    clearTextBoxes();
+                        MessageBox.Show("Updated Successfully...! \n Click new to update another record ");
+                        Display();
+                        clearTextBoxes();
+                    }
+                    if (textBox.Text == "" || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || comboBox.Text == "" || textBox4.Text == "")
+                    {
+                        textBox.BorderBrush = Brushes.Red;
+                        textBox1.BorderBrush = Brushes.Red;
+                        textBox2.Background = Brushes.Red;
+                        textBox3.BorderBrush = Brushes.Red;
+                        textBox4.BorderBrush = Brushes.Red;
+                        comboBox.BorderBrush = Brushes.Red;
+
+                        MessageBox.Show("Fill all fields specifying the Student number you want update its details");
+                        textBox.BorderBrush = Brushes.Gray;
+                        textBox1.BorderBrush = Brushes.Gray;
+                        textBox2.Background = Brushes.White;
+                        textBox2.BorderBrush = Brushes.Gray;
+                        textBox3.BorderBrush = Brushes.Gray;
+                        textBox4.BorderBrush = Brushes.Gray;
+                        comboBox.BorderBrush = Brushes.Gray;
+                        textBox2.Focus();
+                    }
                 }
-                if (textBox.Text == "" || textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || comboBox.Text == "" || textBox4.Text == "")
+                if (i < 1)
                 {
-                    textBox.BorderBrush = Brushes.Red;
-                    textBox1.BorderBrush = Brushes.Red;
-                    textBox2.Background = Brushes.Red;
-                    textBox3.BorderBrush = Brushes.Red;
-                    textBox4.BorderBrush = Brushes.Red;
-                    comboBox.BorderBrush = Brushes.Red;
-
-                    MessageBox.Show("Fill all fields specifying the Student number you want update its details");
-                    textBox.BorderBrush = Brushes.Gray;
-                    textBox1.BorderBrush = Brushes.Gray;
-                    textBox2.Background = Brushes.White;
-                    textBox2.BorderBrush = Brushes.Gray;
-                    textBox3.BorderBrush = Brushes.Gray;
-                    textBox4.BorderBrush = Brushes.Gray;
-                    comboBox.BorderBrush = Brushes.Gray;
-                    textBox2.Focus();
+                    MessageBox.Show("Student Number does not exist");
                 }
+                //Closing the connection
+                connection.Close();
+
+
 
             }
             catch (OleDbException)

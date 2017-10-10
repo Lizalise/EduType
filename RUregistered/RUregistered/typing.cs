@@ -136,7 +136,7 @@ namespace RUregistered
         {
             Application.Exit();
             Revision x = new Revision();
-            x.ShowDialog();
+            x.Show();
         }
 
         private void typeBox_Click_1(object sender, EventArgs e)

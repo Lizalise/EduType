@@ -257,9 +257,9 @@ namespace RUregistered
         #region buttnns
         private void HomeBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            this.Close();
             MainWindow X = new MainWindow();
-            X.ShowDialog();
+            X.Show();
 
         }
 
@@ -362,9 +362,9 @@ namespace RUregistered
 
         private void button5_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            this.Close();
             Edutype X = new Edutype();
-            X.ShowDialog();
+            X.Show();
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
@@ -414,7 +414,7 @@ namespace RUregistered
             if (File.Exists(Current.Name))
             {
                 StreamReader y = File.OpenText(Current.Name);
-                Revisiontxt.Text = ReadString(y);
+                //Revisiontxt.Text = ReadString(y);
             }
             else
             {

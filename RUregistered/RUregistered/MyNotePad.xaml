@@ -41,9 +41,10 @@
                 <TextBox x:Name="textBox6" Height="23" TextWrapping="Wrap" Text="TextBox" Width="120"/>
                 <TabItem Header="Revision" HorizontalAlignment="Left" Height="20" VerticalAlignment="Bottom" Width="63" Margin="6,0,-6,0" MouseDoubleClick="TabItem_MouseDoubleClick">
                     <Grid Background="#FFE5E5E5">
-                        <TextBox x:Name="Revisiontxt" HorizontalAlignment="Left" Height="279" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="688"/>
+                        <TextBox x:Name="Revisiontxt" HorizontalAlignment="Left" Height="229" Margin="10,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="688"/>
                         <Button x:Name="nextbtn" Content="Next" HorizontalAlignment="Left" Margin="703,10,0,0" VerticalAlignment="Top" Width="76" Click="nextbtn_Click"/>
                         <Button Content="Prev" HorizontalAlignment="Left" Margin="703,35,0,0" VerticalAlignment="Top" Width="76"/>
+                        <Label Content="Please double click n the revsion tab " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
                     </Grid>
                 </TabItem>
             </TabControl>
