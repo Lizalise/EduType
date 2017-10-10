@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RUregistered"
         mc:Ignorable="d"
-        Title="AdministratorUse" Height="599.86" Width="967.494" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="AdministratorUse" Height="599.86" Width="967.494" Icon="EduType.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="database.jpg"/>
     </Window.Background>

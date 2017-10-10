@@ -347,7 +347,7 @@ namespace RUregistered
         private void button5_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            typing X = new typing();
+            Edutype X = new Edutype();
             X.ShowDialog();
         }
 

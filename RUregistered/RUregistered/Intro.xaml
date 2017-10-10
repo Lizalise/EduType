@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RUregistered"
         mc:Ignorable="d"
-        Title="Intro" Height="599.86" Width="967.494" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="EduType" Height="599.86" Width="967.494" Icon="EduType.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Canvas HorizontalAlignment="Left" Height="593" VerticalAlignment="Top" Width="961" Margin="0,0,0,-22">
             <Canvas.Background>

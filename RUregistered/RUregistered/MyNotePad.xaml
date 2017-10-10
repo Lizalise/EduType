@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RUregistered"
         mc:Ignorable="d"
-        Title="My Note Pad" Height="599.86" Width="967.494" Icon="" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="My Note Pad" Height="554.86" Width="876.494" Icon="myNotePad icon.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="stainless-wallpaper-2048x1152.jpg"/>
     </Window.Background>
@@ -47,7 +47,7 @@
                     </Grid>
                 </TabItem>
             </TabControl>
-            <Button x:Name="HomeBtn" Content="Home" HorizontalAlignment="Left" Margin="10,517,0,0" VerticalAlignment="Top" Width="95" Click="HomeBtn_Click" Height="36"/>
+            <Button x:Name="HomeBtn" Content="Home" HorizontalAlignment="Left" Margin="19,466,0,0" VerticalAlignment="Top" Width="95" Click="HomeBtn_Click" Height="36"/>
             <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="539,10,0,0" VerticalAlignment="Top" Width="114" Click="button_Click" Height="37"/>
             <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="40" Margin="198,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" TextChanged="textBox5_TextChanged" KeyDown="textBox5_KeyDown"/>
             <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,8,0,0" VerticalAlignment="Top" Height="47" Width="130" GridLinesVisibility="None"/>

@@ -13,14 +13,14 @@ using System.Data.OleDb; // Required when using databaseconnection
 
 namespace RUregistered
 {
-    public partial class typing : Form
+    public partial class Edutype : Form
     {
         Revision revision;
         private string[] panagrams;
         private int pCounter = 0;
        // private int CurrentL = 0;
         private int[] Errors;
-        public typing()
+        public Edutype()
         {
             revision = new Revision();
             InitializeComponent();
@@ -170,7 +170,7 @@ namespace RUregistered
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            typing X = new typing();
+            Edutype X = new Edutype();
             X.ShowDialog();
 
         }
