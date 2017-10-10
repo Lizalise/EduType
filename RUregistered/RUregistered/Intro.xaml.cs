@@ -39,5 +39,22 @@ namespace RUregistered
         {
             intro.Content = "Click here to proceed";
         }
+
+        private void aboutus_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            aboutUs X = new aboutUs();
+            X.ShowDialog();
+        }
+
+        private void aboutus_MouseMove(object sender, MouseEventArgs e)
+        {
+            aboutus.Content = "About us";
+        }
+
+        private void aboutus_MouseLeave(object sender, MouseEventArgs e)
+        {
+            aboutus.Content = "";
+        }
     }
 }

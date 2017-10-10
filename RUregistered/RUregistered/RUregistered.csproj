@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="aboutUs.xaml.cs">
+      <DependentUpon>aboutUs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
     <Compile Include="typing.Designer.cs">
       <DependentUpon>typing.cs</DependentUpon>
     </Compile>
+    <Page Include="aboutUs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AdministratorUse.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -152,6 +159,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="keyboard_W5j_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="about-us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="20170826_160408.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -128,6 +128,8 @@ namespace RUregistered
         private void QuitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            Revision x = new Revision();
+            x.ShowDialog();
         }
 
         private void typeBox_Click_1(object sender, EventArgs e)
