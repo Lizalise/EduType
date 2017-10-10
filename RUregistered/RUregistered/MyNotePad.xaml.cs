@@ -58,7 +58,7 @@ namespace RUregistered
         }
         public override string ToString()
         {
-            string text = $"{Name} {Date}\n\n \n  {Text}";
+            string text = $"{Name} {Date}\n \n{Text}";
             return text;
         }
     }
@@ -111,6 +111,12 @@ namespace RUregistered
 
         private void Save(string filename)
         {
+            /*
+             * Unique saving codes are:
+             * Definitions start with @
+             * Examples start with #
+             * Lecture start with $
+            */
             try
             {
 
@@ -120,7 +126,8 @@ namespace RUregistered
                     string v = "";
                     for (int i = 0; i < Current.MyDefs.Count; i++)
                     {
-                        v = string.Format("{0}", Current.MyDefs[i]);
+                        string x = "@";
+                        v += string.Format("{0}{1}", x, Current.MyDefs[i]);
                         filebash.WriteLine(v);
                     }
                 }
@@ -129,7 +136,8 @@ namespace RUregistered
                 {
                     for (int i = 0; i < Current.MyExamples.Count; i++)
                     {
-                        string v = string.Format("{0}", Current.MyExamples[i]);
+                        string x = "#";
+                        string v = string.Format("{0}{1}", x, Current.MyExamples[i]);
                         filebash.WriteLine(v);
                     }
                 }
@@ -137,7 +145,8 @@ namespace RUregistered
                 {
                     for (int i = 0; i < Current.myLectNotes.Count; i++)
                     {
-                        string v = string.Format("{0}", Current.myLectNotes[i]);
+                        string x = "$";
+                        string v = string.Format("{0}{1}", x, Current.myLectNotes[i]);
                         filebash.WriteLine(v);
                     }
                 }
@@ -235,17 +244,17 @@ namespace RUregistered
             
         }
 
-        protected string ReadString(StreamReader r)
+        protected void ReadString(StreamReader r)
         {
-            int lines = Convert.ToInt32(r.ReadLine());
             string s = "";
-            for (int i = 0; i < lines; i++)
+            while(true)
             {
+                if (r.ReadLine() == null) break;
                 s += r.ReadLine() + "\n";
             }
-            return s;
+            
         }
-
+        #region buttnns
         private void HomeBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
@@ -273,8 +282,16 @@ namespace RUregistered
         private void button_Click(object sender, RoutedEventArgs e)
         {
             try {
-                Save(Current.Name);
-                MessageBox.Show("successfully saved!!");
+                if(textBox5.Text != "")
+                {
+                    Save(Current.Name);
+                    MessageBox.Show("successfully saved!!");
+                }
+                else
+                {
+                    throw new Exception();
+                }
+               
                 //SaveFileDialog saver = new SaveFileDialog();
 
                 //saver.ShowDialog();
@@ -291,7 +308,6 @@ namespace RUregistered
             OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\RUregistered.accdb");
 
             {
-
                 try
                 {
                     connection.Open();
@@ -370,8 +386,8 @@ namespace RUregistered
         private void button4_Click(object sender, RoutedEventArgs e)
         {
             try {
-                if (LecNotes.Text == "") throw new Exception("Please enter text on both texboxes!");
-                LectureNotes n = new LectureNotes(textBox5.Text, LecNotes.Text, DateTime.Today);
+                if (LecNotes.Text == "") throw new Exception("Please enter text the texboxe!");
+                LectureNotes n = new LectureNotes(textBox5.Text, LecNotes.Text, DateTime.Now);
                 Current.myLectNotes.Add(n);
                 LecNotes.Text = "";
             }
@@ -404,6 +420,19 @@ namespace RUregistered
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Prev();
+        }
+#endregion
+        private void TabItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (File.Exists(Current.Name))
+            {
+                StreamReader y = File.OpenText(Current.Name);
+                Revisiontxt.Text = ReadString(y);
+            }
+            else
+            {
+                Next();
+            }
         }
     }
 }

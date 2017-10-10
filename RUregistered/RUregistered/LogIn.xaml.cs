@@ -47,14 +47,9 @@ namespace RUregistered
                 }
                 if (i == 1)
                 {
-                    MessageBox.Show("Student Number and password is correct");
                     this.Hide();
                     Revision X = new Revision();
                     X.ShowDialog();
-                }
-                if (i > 1)
-                {
-                    MessageBox.Show("Duplicate Student Number and password. Try Again");
                 }
                 if (i < 1)
                 {
@@ -82,6 +77,11 @@ namespace RUregistered
             this.Hide();
             MainWindow X = new MainWindow();
             X.ShowDialog();
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Enter && textBox2.Text != "") { passwordBox.Focus(); }
         }
     }
 }

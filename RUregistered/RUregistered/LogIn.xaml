@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RUregistered"
         mc:Ignorable="d"
-        Title="Log In" Height="289.075" Width="510.925" Icon="EduType.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Log In" Height="289.075" Width="510.925" Icon="EduType.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown">
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

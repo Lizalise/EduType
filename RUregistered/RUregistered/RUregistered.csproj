@@ -67,6 +67,11 @@
     <Compile Include="MyNotePad.xaml.cs">
       <DependentUpon>MyNotePad.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="typing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +128,7 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="typing.resx">
       <DependentUpon>typing.cs</DependentUpon>
@@ -165,6 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="20170826_160408.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Backlit_keyboard.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

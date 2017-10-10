@@ -34,19 +34,26 @@ namespace RUregistered
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-
-            string s = textBox1.Text;
-            FileStream read = File.OpenRead(s);
-            var reader = new StreamReader(read);
-            int counter = 0;
-            while (!reader.EndOfStream)
+            try
             {
-                panagrams[counter] = reader.ReadLine();
-                counter++;
+                if (textBox1.Text == "") throw new Exception("Please select a course");
+                string s = textBox1.Text;
+                FileStream read = File.OpenRead(s);
+                var reader = new StreamReader(read);
+                int counter = 0;
+                while (!reader.EndOfStream)
+                {
+                    panagrams[counter] = reader.ReadLine();
+                    counter++;
+                }
+                typeBox.Focus();
+                Typing();
             }
-            typeBox.Focus();
-            Typing();
+            catch(Exception x)
+            {
+                MessageBox.Show(x.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void Typing()

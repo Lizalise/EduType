@@ -29,7 +29,7 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button x:Name="aboutus" Content="" Canvas.Top="7" Width="103" RenderTransformOrigin="0.5,0.5" Height="128" Foreground="#FF190D0D" BorderBrush="#FFF3F3F3" Canvas.Left="851" Click="aboutus_Click" FontSize="18" FontWeight="Bold" MouseMove="aboutus_MouseMove" MouseLeave="aboutus_MouseLeave">
+            <Button x:Name="aboutus" Content="" Canvas.Top="19" Width="103" RenderTransformOrigin="0.5,0.5" Height="128" Foreground="#FF190D0D" BorderBrush="#FFF3F3F3" Canvas.Left="837" Click="aboutus_Click" FontSize="18" FontWeight="Bold" MouseMove="aboutus_MouseMove" MouseLeave="aboutus_MouseLeave">
                 <Button.Background>
                     <ImageBrush ImageSource="about-us.png"/>
                 </Button.Background>
