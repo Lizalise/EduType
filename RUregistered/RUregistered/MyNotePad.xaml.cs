@@ -109,47 +109,10 @@ namespace RUregistered
             Current = new Subject(textBox5.Text);
         }
 
-        private void Save(string filename)
-        {
-            try
-            {
+        
 
-                TextWriter filebash = File.AppendText(filename);
-                if (Current.MyDefs.Count != 0)
-                {
-                    string v = "";
-                    for (int i = 0; i < Current.MyDefs.Count; i++)
-                    {
-                        v += string.Format("\n{0}", Current.MyDefs[i]);
-                        filebash.WriteLine(v);
-                    }
-                }
+        #region next, prev, save and read methods
 
-                if (Current.MyExamples.Count != 0)
-                {
-                    for (int i = 0; i < Current.MyExamples.Count; i++)
-                    {
-                        string v = string.Format("\n{0}", Current.MyExamples[i]);
-                        filebash.WriteLine(v);
-                    }
-                }
-                if (Current.myLectNotes.Count != 0)
-                {
-                    for (int i = 0; i < Current.myLectNotes.Count; i++)
-                    {
-                        string v = string.Format("\n{0}", Current.myLectNotes[i]);
-                        filebash.WriteLine(v);
-                    }
-                }
-                filebash.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        #region next, prev methods
         int LectCount = 0;
         int DefCount = 0;
         int ExCount = 0;
@@ -216,26 +179,45 @@ namespace RUregistered
                 }
             }
         }
-
-        #endregion
-
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void Save(string filename)
         {
             try
             {
-                if (ExampleTextBox.Text == ""|| ExampleName.Text=="") throw new Exception("Please enter text on both texboxes!");
-                Examples n = new Examples(ExampleName.Text, ExampleTextBox.Text);
-                Current.MyExamples.Add(n);
-                ExampleName.Text = "";
-                ExampleTextBox.Text = "";
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-            
-        }
 
+                TextWriter filebash = File.AppendText(filename);
+                if (Current.MyDefs.Count != 0)
+                {
+                    string v = "";
+                    for (int i = 0; i < Current.MyDefs.Count; i++)
+                    {
+                        v += string.Format("\n{0}", Current.MyDefs[i]);
+                        filebash.WriteLine(v);
+                    }
+                }
+
+                if (Current.MyExamples.Count != 0)
+                {
+                    for (int i = 0; i < Current.MyExamples.Count; i++)
+                    {
+                        string v = string.Format("\n{0}", Current.MyExamples[i]);
+                        filebash.WriteLine(v);
+                    }
+                }
+                if (Current.myLectNotes.Count != 0)
+                {
+                    for (int i = 0; i < Current.myLectNotes.Count; i++)
+                    {
+                        string v = string.Format("\n{0}", Current.myLectNotes[i]);
+                        filebash.WriteLine(v);
+                    }
+                }
+                filebash.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         protected string Read(StreamReader r)
         {
             string s = "";
@@ -246,54 +228,10 @@ namespace RUregistered
             }
             return s;
         }
-        
-        #region buttnns
-        private void HomeBtn_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-            MainWindow X = new MainWindow();
-            X.Show();
 
-        }
+        #endregion
 
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                if (DefName.Text == "" || ExampleTextBox == null) throw new Exception("Please enter text on both texboxes!");
-                Current.MyDefs.Add(new Definitions(DefName.Text, Txtdefinition.Text));
-                DefName.Text = "";
-                Txtdefinition.Text = "";
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            try {
-                if(textBox5.Text != "")
-                {
-                    Save(Current.Name);
-                    MessageBox.Show("successfully saved!!");
-                }
-                else
-                {
-                    throw new Exception();
-                }
-               
-                //SaveFileDialog saver = new SaveFileDialog();
-
-                //saver.ShowDialog();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Please fill in your student number first");
-            }
-        }
+        #region textbox events
 
         private void textBox5_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -353,6 +291,75 @@ namespace RUregistered
             }
         }
 
+        #endregion
+
+        #region buttnns
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (ExampleTextBox.Text == "" || ExampleName.Text == "") throw new Exception("Please enter text on both texboxes!");
+                Examples n = new Examples(ExampleName.Text, ExampleTextBox.Text);
+                Current.MyExamples.Add(n);
+                ExampleName.Text = "";
+                ExampleTextBox.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+        }
+
+        private void HomeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            MainWindow X = new MainWindow();
+            X.Show();
+
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (DefName.Text == "" || ExampleTextBox == null) throw new Exception("Please enter text on both texboxes!");
+                Current.MyDefs.Add(new Definitions(DefName.Text, Txtdefinition.Text));
+                DefName.Text = "";
+                Txtdefinition.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            try {
+                if(textBox5.Text != "")
+                {
+                    Save(Current.Name);
+                    MessageBox.Show("successfully saved!!");
+                }
+                else
+                {
+                    throw new Exception();
+                }
+               
+                //SaveFileDialog saver = new SaveFileDialog();
+
+                //saver.ShowDialog();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Please fill in your student number first");
+            }
+        }
+
+
         private void button5_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -401,7 +408,24 @@ namespace RUregistered
         {
             Prev();
         }
-#endregion
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+                Prev();
+            }
+            catch
+            {
+                MessageBox.Show("There is no item!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+
+
+        }
+
+        #endregion
 
         private void TabItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
@@ -424,21 +448,7 @@ namespace RUregistered
             }
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-
-            try
-            {
-                Prev();
-            }
-            catch
-            {
-                MessageBox.Show("There is no item!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-                
-            
-            
-        }
+       
     }
 }
 
