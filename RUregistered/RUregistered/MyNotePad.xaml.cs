@@ -111,12 +111,6 @@ namespace RUregistered
 
         private void Save(string filename)
         {
-            /*
-             * Unique saving codes are:
-             * Definitions start with @
-             * Examples start with #
-             * Lecture start with $
-            */
             try
             {
 
@@ -126,7 +120,7 @@ namespace RUregistered
                     string v = "";
                     for (int i = 0; i < Current.MyDefs.Count; i++)
                     {
-                        v += string.Format("{0}", Current.MyDefs[i]);
+                        v += string.Format("\n{0}", Current.MyDefs[i]);
                         filebash.WriteLine(v);
                     }
                 }
@@ -135,7 +129,7 @@ namespace RUregistered
                 {
                     for (int i = 0; i < Current.MyExamples.Count; i++)
                     {
-                        string v = string.Format("{0}", Current.MyExamples[i]);
+                        string v = string.Format("\n{0}", Current.MyExamples[i]);
                         filebash.WriteLine(v);
                     }
                 }
@@ -143,7 +137,7 @@ namespace RUregistered
                 {
                     for (int i = 0; i < Current.myLectNotes.Count; i++)
                     {
-                        string v = string.Format("{0}", Current.myLectNotes[i]);
+                        string v = string.Format("\n{0}", Current.myLectNotes[i]);
                         filebash.WriteLine(v);
                     }
                 }
@@ -251,56 +245,6 @@ namespace RUregistered
                 s += r.ReadLine() + "\n";
             }
             return s;
-        }
-
-        protected string ReadString(StreamReader r)
-        {
-            string Total = "";
-            string lecture = "";
-            string Definition = "";
-            string Examples = "";
-            string s = "";
-            while(true)
-            {
-                s = r.ReadLine();
-
-                if (s == null) break;
-                
-                if (s[0] == '$')
-                {
-                    string[] line = s.Split();
-                    lecture = $"{line[1]} {line[2]}";
-                    for (int i = 3; i < line.Length; i++)
-                    {
-                        //s += line[i] + "\n";
-                        lecture += line[i] + "\n";
-                    }
-                    //lecture = lecture + s+"\n";
-                }
-                else if (s[0] == '#')
-                {
-                    string[] line = s.Split(':');
-                    for (int i = 0; i < line.Length; i++)
-                    {
-                        Examples += line[i] + "\n";
-                    }
-                    //Examples = Examples + s +"\n";
-                    //s = "";
-                }
-                else if (s[0] == '@')
-                {
-                    string[] line = s.Split(':');
-                    s = $"{ line[1]}\n";
-                    for (int i = 3; i < line.Length; i++)
-                    {
-                        Definition += line[i];
-                    }
-                    //Definition = Definition +s + "\n";
-                    //s = "";
-                }
-            }
-            Total = $"Lecture Notes:\n{lecture}\n  \nYour Examples:\n{Examples}\n  \nYour Definitions:\n{Definition}";
-            return Total;
         }
         
         #region buttnns
@@ -458,6 +402,7 @@ namespace RUregistered
             Prev();
         }
 #endregion
+
         private void TabItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             try
