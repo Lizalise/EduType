@@ -178,17 +178,17 @@ namespace RUregistered
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Edutype X = new Edutype();
-            X.ShowDialog();
+            X.Show();
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             MainWindow X = new MainWindow();
-            X.ShowDialog();
+            X.Show();
         }
     }
 }
