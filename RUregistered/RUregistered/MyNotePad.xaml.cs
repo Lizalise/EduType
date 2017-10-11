@@ -20,6 +20,9 @@ namespace RUregistered
     /// <summary>
     /// Interaction logic for Revision.xaml
     /// </summary>
+   
+     #region classes and an interface created
+
     interface NameOfThing
     {
         string Name { get; set; }
@@ -97,6 +100,9 @@ namespace RUregistered
             Name = name;
         }
     }
+
+    #endregion
+
     public partial class Revision : Window
     {
         studentNumberFile studentNumber;
@@ -108,9 +114,7 @@ namespace RUregistered
             dataGrid.IsEnabled = false;
             Current = new Subject(textBox5.Text);
         }
-
         
-
         #region next, prev, save and read methods
 
         int LectCount = 0;
