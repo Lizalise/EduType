@@ -65,7 +65,7 @@ namespace RUregistered
             }
             else
             {
-                MessageBox.Show("End of the panagram");
+                MessageBox.Show("End of the paragraph");
                 ResetForm();
                 Stats();
             }
@@ -76,7 +76,7 @@ namespace RUregistered
             resultsBox.AppendText("Your Results: " + "\n" + "\n");
             for (int i = 0; i < Errors.Count(); i++)
             {
-                resultsBox.AppendText("in the panagram # " + (i + 1) + " you made " + Errors[i] + " mistakes" + "\n" + "\n");
+                resultsBox.AppendText("in sentence # " + (i + 1) + " you made " + Errors[i] + " mistakes" + "\n" + "\n");
             }
         }
         private void Accuracy()
