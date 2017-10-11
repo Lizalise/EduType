@@ -58,7 +58,7 @@ namespace RUregistered
         }
         public override string ToString()
         {
-            string text = $"{Name} {Date}\n \n{Text}";
+            string text = $"{Name} {Date}\n \n{Text}\n";
             return text;
         }
     }
@@ -71,7 +71,7 @@ namespace RUregistered
         }
         public override string ToString()
         {
-            string text = $"The concept of {Name}: \n\n \n{Text}";
+            string text = $"The concept of {Name}: \n \n{Text}\n \n";
             return text;
         }
     }
@@ -85,7 +85,7 @@ namespace RUregistered
         }
         public override string ToString()
         {
-            string text = $"{Name}: \n \n {Text}";
+            string text = $"{Name}: \n \n {Text}\n \n";
             return text;
         }
     }
@@ -126,8 +126,7 @@ namespace RUregistered
                     string v = "";
                     for (int i = 0; i < Current.MyDefs.Count; i++)
                     {
-                        string x = "@";
-                        v += string.Format("{0}{1}", x, Current.MyDefs[i]);
+                        v += string.Format("{0}", Current.MyDefs[i]);
                         filebash.WriteLine(v);
                     }
                 }
@@ -136,8 +135,7 @@ namespace RUregistered
                 {
                     for (int i = 0; i < Current.MyExamples.Count; i++)
                     {
-                        string x = "#";
-                        string v = string.Format("{0}{1}", x, Current.MyExamples[i]);
+                        string v = string.Format("{0}", Current.MyExamples[i]);
                         filebash.WriteLine(v);
                     }
                 }
@@ -145,8 +143,7 @@ namespace RUregistered
                 {
                     for (int i = 0; i < Current.myLectNotes.Count; i++)
                     {
-                        string x = "$";
-                        string v = string.Format("{0}{1}", x, Current.myLectNotes[i]);
+                        string v = string.Format("{0}", Current.myLectNotes[i]);
                         filebash.WriteLine(v);
                     }
                 }
@@ -244,16 +241,68 @@ namespace RUregistered
             
         }
 
-        protected void ReadString(StreamReader r)
+        protected string Read(StreamReader r)
         {
+            if (r.ReadLine() == null) throw new Exception("The file is empty!");
             string s = "";
-            while(true)
+            while (true)
             {
                 if (r.ReadLine() == null) break;
                 s += r.ReadLine() + "\n";
             }
-            
+            return s;
         }
+
+        protected string ReadString(StreamReader r)
+        {
+            string Total = "";
+            string lecture = "";
+            string Definition = "";
+            string Examples = "";
+            string s = "";
+            while(true)
+            {
+                s = r.ReadLine();
+
+                if (s == null) break;
+                
+                if (s[0] == '$')
+                {
+                    string[] line = s.Split();
+                    lecture = $"{line[1]} {line[2]}";
+                    for (int i = 3; i < line.Length; i++)
+                    {
+                        //s += line[i] + "\n";
+                        lecture += line[i] + "\n";
+                    }
+                    //lecture = lecture + s+"\n";
+                }
+                else if (s[0] == '#')
+                {
+                    string[] line = s.Split(':');
+                    for (int i = 0; i < line.Length; i++)
+                    {
+                        Examples += line[i] + "\n";
+                    }
+                    //Examples = Examples + s +"\n";
+                    //s = "";
+                }
+                else if (s[0] == '@')
+                {
+                    string[] line = s.Split(':');
+                    s = $"{ line[1]}\n";
+                    for (int i = 3; i < line.Length; i++)
+                    {
+                        Definition += line[i];
+                    }
+                    //Definition = Definition +s + "\n";
+                    //s = "";
+                }
+            }
+            Total = $"Lecture Notes:\n{lecture}\n  \nYour Examples:\n{Examples}\n  \nYour Definitions:\n{Definition}";
+            return Total;
+        }
+        
         #region buttnns
         private void HomeBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -411,14 +460,22 @@ namespace RUregistered
 #endregion
         private void TabItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (File.Exists(Current.Name))
+            try
             {
-                StreamReader y = File.OpenText(Current.Name);
-                //Revisiontxt.Text = ReadString(y);
+                if (textBox5.Text == "") throw new Exception("Please enter your student number!");
+                if (File.Exists(Current.Name))
+                {
+                    StreamReader y = File.OpenText(Current.Name);
+                    Revisiontxt.Text = Read(y);
+                }
+                else
+                {
+                    Next();
+                }
             }
-            else
+            catch(Exception x)
             {
-                Next();
+                MessageBox.Show(x.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

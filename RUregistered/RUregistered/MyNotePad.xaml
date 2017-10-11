@@ -19,32 +19,32 @@
                             <ColumnDefinition Width="168*"/>
                         </Grid.ColumnDefinitions>
                         <Label x:Name="label" Content="Example Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="89"/>
-                        <TextBox x:Name="ExampleName" HorizontalAlignment="Left" Height="26" Margin="104,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="467" Grid.ColumnSpan="2"/>
+                        <TextBox x:Name="ExampleName" SpellCheck.IsEnabled="True"  Language="en-ZA" HorizontalAlignment="Left" Height="26" Margin="104,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="467" Grid.ColumnSpan="2"/>
                         <Button x:Name="button2" Content="Add Example" HorizontalAlignment="Left" Margin="409,10,0,0" VerticalAlignment="Top" Width="85" Height="26" Click="button2_Click" Grid.Column="1"/>
-                        <TextBox x:Name="ExampleTextBox" SpellCheck.IsEnabled="True" AcceptsReturn="True"  HorizontalAlignment="Left" Height="248" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="769" Grid.ColumnSpan="2"/>
+                        <TextBox x:Name="ExampleTextBox"  Language="en-ZA" AcceptsReturn="True"  SpellCheck.IsEnabled="True" HorizontalAlignment="Left" Height="248" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="769" Grid.ColumnSpan="2"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="Definitions" Margin="0,0,1,-2">
                     <Grid Background="#FFE5E5E5">
-                        <TextBox x:Name="Txtdefinition" SpellCheck.IsEnabled="True" HorizontalAlignment="Left" Height="248" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="769"/>
+                        <TextBox x:Name="Txtdefinition" AcceptsReturn="True"  Language="en-ZA" SpellCheck.IsEnabled="True" HorizontalAlignment="Left" Height="248" Margin="10,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="769"/>
                         <Label x:Name="label1" Content="Definition Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                        <TextBox x:Name="DefName" HorizontalAlignment="Left" Height="26" Margin="112,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="477"/>
+                        <TextBox x:Name="DefName"  Language="en-ZA" SpellCheck.IsEnabled="True" HorizontalAlignment="Left" Height="26" Margin="112,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="477"/>
                         <Button x:Name="button3" Content="Add Definition" HorizontalAlignment="Left" Margin="679,13,0,0" VerticalAlignment="Top" Width="100" Height="23" Click="button3_Click"/>
                     </Grid>
                 </TabItem>
                 <TabItem Header="Lecture Notes" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="96" Margin="4,0,0,0">
                     <Grid Background="#FFE5E5E5" Margin="0,10,-2,-6">
-                        <TextBox x:Name="LecNotes" SpellCheck.IsEnabled="True"  HorizontalAlignment="Left" Height="243" Margin="10,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="771"/>
+                        <TextBox x:Name="LecNotes" AcceptsReturn="True" Language="en-ZA" SpellCheck.IsEnabled="True"  HorizontalAlignment="Left" Height="243" Margin="10,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="771"/>
                         <Button x:Name="button4" Content="Add Lecture Note" HorizontalAlignment="Left" Margin="657,10,0,0" VerticalAlignment="Top" Width="124" Click="button4_Click" Height="27"/>
                     </Grid>
                 </TabItem>
                 <TextBox x:Name="textBox6" Height="23" TextWrapping="Wrap" Text="TextBox" Width="120"/>
                 <TabItem Header="Revision" HorizontalAlignment="Left" Height="20" VerticalAlignment="Bottom" Width="63" Margin="6,0,-6,0" MouseDoubleClick="TabItem_MouseDoubleClick">
                     <Grid Background="#FFE5E5E5">
-                        <TextBox x:Name="Revisiontxt" HorizontalAlignment="Left" Height="229" Margin="10,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="688"/>
+                        <TextBox x:Name="Revisiontxt" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Left" TextWrapping="Wrap" Height="229" Margin="10,60,0,0" VerticalAlignment="Top" Width="769"/>
                         <Button x:Name="nextbtn" Content="Next" HorizontalAlignment="Left" Margin="703,10,0,0" VerticalAlignment="Top" Width="76" Click="nextbtn_Click"/>
                         <Button Content="Prev" HorizontalAlignment="Left" Margin="703,35,0,0" VerticalAlignment="Top" Width="76"/>
-                        <Label Content="Please double click n the revsion tab " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                        <Label Content="Please double click the revision tab" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
                     </Grid>
                 </TabItem>
             </TabControl>
