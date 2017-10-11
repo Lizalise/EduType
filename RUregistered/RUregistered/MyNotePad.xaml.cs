@@ -107,8 +107,6 @@ namespace RUregistered
             InitializeComponent();
             dataGrid.IsEnabled = false;
             Current = new Subject(textBox5.Text);
-            nextbtn.Visibility = Visibility.Hidden;
-            prevbtn.Visibility = Visibility.Hidden;
         }
 
         private void Save(string filename)
@@ -240,7 +238,6 @@ namespace RUregistered
 
         protected string Read(StreamReader r)
         {
-            if (r.ReadLine() == null) throw new Exception("The file is empty!");
             string s = "";
             while (true)
             {
@@ -408,16 +405,6 @@ namespace RUregistered
 
         private void TabItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (LectCount != 0 || DefCount != 0 || ExCount != 0)
-            {
-                prevbtn.Visibility = Visibility.Visible;
-                nextbtn.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                prevbtn.Visibility = Visibility.Hidden;
-                nextbtn.Visibility = Visibility.Hidden;
-            }
             try
             {
                 if (textBox5.Text == "") throw new Exception("Please enter your student number!");
@@ -439,9 +426,16 @@ namespace RUregistered
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            
-                
+
+            try
+            {
                 Prev();
+            }
+            catch
+            {
+                MessageBox.Show("There is no item!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+                
             
             
         }

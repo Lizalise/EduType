@@ -1,19 +1,28 @@
-my definition: 
+
+linear search: 
  
- jus a new def.
+ Searching all items of a sequence from first to last is called a linear search
  
 
-The concept of my example is: 
+
+The concept of Test-driven development (TDD) : 
  
-this is the example
+Test-driven development (TDD) is a software development practice which goes one step further. The key idea is that automated tests should be written first. This technique is called test-driven because — if we are to believe the extremists — non-testing code should only be written after writing the tests, and in response to the fact that some test is failing.
  
 
-The concept of examle: 
- 
-umzample
- 
 
-g16n3498 11-Oct-17 15:31:09
+g16n3498 11-Oct-17 19:19:52
  
-hear are the lecture notes
+Searching all items of a sequence from first to last is called a linear search. Each time we check an item, we’ll call it a probe. We like to count probes as a measure of how efficient our algorithm is, and this will be a good indication of how long our algorithm will take to execute.
+
+Let N be the length of the list to be searched. Linear searching is characterized by the fact that the number of probes needed to find some target depends directly on N. So if the list becomes ten times bigger, we can expect to wait ten times longer when searching for things. Notice too, that if we’re searching for a target that is not present in the list, we’ll have to go all the way to the end before we can return the negative value. So this case needs N probes. However, if we’re searching for a target that does exist in the list, we could be lucky and find it immediately in position 0, or we might have to look further, perhaps halfway, perhaps even all the way to the last item. On average, when the target is present, we’re going to need to go about halfway through the list, or N/2 probes.
+
+We say that this search has linear performance (linear meaning straight line) because, if we were to measure the average search times for different sizes of lists (N) all containing random values, and then plot a graph of probes against N, we’d get an approximately straight line graph — as N gets bigger, so probes will increase proportionally.
+
+Analysis like this is pretty meaningless for small collections — the computer is quick enough not to bother if the list only has a handful of items. So generally, we’re interested in whether our algorithms are scalable — do they perform adequately if we throw bigger problems at them? Would this search be a sensible one to use if we had a million or ten million items (perhaps the catalogue of books in your local library)? What happens for really large datasets, e.g. how does Google search so brilliantly well?
+
+
+g16n3498 11-Oct-17 19:20:11
+ 
+It is useful to think about having a region-of-interest (ROI) within the array or list that is being searched. This ROI will be the portion of the list in which it is still possible that our target might be found. Our algorithm will start with the ROI initially set to all the items in the array. We’ll always probe in the middle of the current ROI. On every probe there are three possible outcomes: either we find the target, or we learn that we can discard the top half of the ROI, or we learn that we can discard the bottom half of the ROI.
 
