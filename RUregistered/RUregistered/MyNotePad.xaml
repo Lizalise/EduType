@@ -43,7 +43,7 @@
                     <Grid Background="#FFE5E5E5">
                         <TextBox x:Name="Revisiontxt" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Left" TextWrapping="Wrap" Height="229" Margin="10,60,0,0" VerticalAlignment="Top" Width="769"/>
                         <Button x:Name="nextbtn" Content="Next" HorizontalAlignment="Left" Margin="703,10,0,0" VerticalAlignment="Top" Width="76" Click="nextbtn_Click"/>
-                        <Button Content="Prev" HorizontalAlignment="Left" Margin="703,35,0,0" VerticalAlignment="Top" Width="76"/>
+                        <Button Name="prevbtn" Content="Prev" HorizontalAlignment="Left" Margin="703,35,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_2"/>
                         <Label Content="Please double click the revision tab" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
                     </Grid>
                 </TabItem>

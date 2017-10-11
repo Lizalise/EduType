@@ -11,8 +11,8 @@
     </Window.Background>
     <Grid>
         <Button Content="Home" BorderBrush="AntiqueWhite" HorizontalAlignment="Left" Margin="10,525,0,0" VerticalAlignment="Top" Width="118" Height="36"  Background="{x:Null}" Foreground="#FFEAE3E3" FontSize="18" Click="Button_Click"/>
-        <Label Content="The Quad De Danger Team" HorizontalAlignment="Left" Margin="204,10,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="36" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="151" Margin="30,21,0,0" VerticalAlignment="Top" Width="150" Source="20170826_160408.jpg" RenderTransformOrigin="0.459,0.51" Stretch="Fill">
+        <Label Content="The Quad De Danger Team" HorizontalAlignment="Left" Margin="204,10,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="36" FontWeight="Bold" Background="{x:Null}" Foreground="Black"/>
+        <Image HorizontalAlignment="Left" Height="166" Margin="231,216,0,0" VerticalAlignment="Top" Width="150" Source="20170826_160408.jpg" RenderTransformOrigin="0.459,0.51" Stretch="Fill">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -22,6 +22,13 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <Image HorizontalAlignment="Left" Height="180" Margin="204,56,0,0" VerticalAlignment="Top" Width="190" Source="masi.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="164" Margin="554,287,0,0" VerticalAlignment="Top" Width="192" Source="Rudolf.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="170" Margin="554,66,0,0" VerticalAlignment="Top" Width="192" Source="luks.jpg" Stretch="Fill"/>
+        <Label Content="Masibulele Mbube" HorizontalAlignment="Left" Margin="204,241,0,0" VerticalAlignment="Top" Height="35" Width="190" FontSize="22" FontFamily="TGL0-16" FontWeight="Bold" Foreground="#FFF10000"/>
+        <Label Content="Sibusiso Ncanywa" HorizontalAlignment="Left" Margin="204,439,0,0" VerticalAlignment="Top" Height="41" Width="197" FontSize="22" FontFamily="TGL0-16" FontWeight="Bold" Foreground="#FFFD0000"/>
+        <Label Content="Likhanyiso Brukwe" HorizontalAlignment="Left" Margin="554,241,0,0" VerticalAlignment="Top" Height="41" Width="211" FontSize="22" FontFamily="TGL0-16" FontWeight="Bold" RenderTransformOrigin="0.479,0.463" Foreground="#FFFF7A7A"/>
+        <Label Content="Rudolf Tshilinga" HorizontalAlignment="Left" Margin="554,456,0,0" VerticalAlignment="Top" Height="41" Width="192" FontSize="22" FontFamily="TGL0-16" FontWeight="Bold" Foreground="#FFFFD9D9"/>
 
     </Grid>
 </Window>
